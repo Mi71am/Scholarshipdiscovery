@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Specification Color Palette -->
+    <color name="deep_navy">#172B4D</color>
+    <color name="dark_blue">#233F68</color>
+    <color name="teal">#168C83</color>
+    <color name="soft_teal">#E5F3F1</color>
+    <color name="warm_cream">#FAF7F0</color>
+    <color name="off_white">#F8FAFC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="warm_gold">#E8B75A</color>
+    <color name="charcoal">#344054</color>
+    <color name="soft_grey">#667085</color>
+    <color name="light_red">#FDECEC</color>
+    <color name="soft_red">#FDECEC</color>
+    <color name="error_red">#B42318</color>
+    <color name="eligible_green">#027A48</color>
+
+    <!-- Alias colors for compatibility -->
+    <color name="primary_navy">#172B4D</color>
+    <color name="primary_dark_slate">#233F68</color>
+    <color name="accent_indigo">#168C83</color>
+    <color name="accent_gold">#E8B75A</color>
+    <color name="accent_emerald">#168C83</color>
+    <color name="background_light">#F8FAFC</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="text_primary">#172B4D</color>
+    <color name="text_secondary">#667085</color>
+    <color name="input_border">#D0D5DD</color>
+</resources>
