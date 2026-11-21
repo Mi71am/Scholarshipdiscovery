@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.scholarshipdiscovery.ui.dashboard.DashboardFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_discoverFragment"
+            app:destination="@id/discoverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.scholarshipdiscovery.ui.profile.ProfileFragment"
+        android:label="Student Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.scholarshipdiscovery.ui.discover.DiscoverFragment"
+        android:label="Discover Scholarships"
+        tools:layout="@layout/fragment_discover">
+
+        <action
+            android:id="@+id/action_discoverFragment_to_scholarshipDetailsFragment"
+            app:destination="@id/scholarshipDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedScholarshipsFragment"
+        android:name="com.example.scholarshipdiscovery.ui.saved.SavedScholarshipsFragment"
+        android:label="Saved Scholarships"
+        tools:layout="@layout/fragment_saved_scholarships">
+
+        <action
+            android:id="@+id/action_savedScholarshipsFragment_to_scholarshipDetailsFragment"
+            app:destination="@id/scholarshipDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/applicationTrackerFragment"
+        android:name="com.example.scholarshipdiscovery.ui.tracker.ApplicationTrackerFragment"
+        android:label="Application Tracker"
+        tools:layout="@layout/fragment_application_tracker" />
+
+    <fragment
+        android:id="@+id/scholarshipDetailsFragment"
+        android:name="com.example.scholarshipdiscovery.ui.details.ScholarshipDetailsFragment"
+        android:label="Scholarship Details"
+        tools:layout="@layout/fragment_scholarship_details">
+
+        <argument
+            android:name="scholarship"
+            app:argType="com.example.scholarshipdiscovery.data.model.Scholarship" />
+    </fragment>
+
+</navigation>
