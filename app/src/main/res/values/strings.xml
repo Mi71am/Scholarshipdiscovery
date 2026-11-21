@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scholarship Discovery</string>
+    <string name="action_logout">Sign Out</string>
+    <string name="student_portal">Student Portal</string>
+</resources>
