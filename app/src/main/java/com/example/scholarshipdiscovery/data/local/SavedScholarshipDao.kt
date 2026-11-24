@@ -21,4 +21,7 @@ interface SavedScholarshipDao {
 
     @Query("SELECT EXISTS(SELECT 1 FROM saved_scholarships WHERE scholarshipId = :scholarshipId)")
     fun isScholarshipSaved(scholarshipId: Int): LiveData<Boolean>
+
+    @Query("SELECT * FROM saved_scholarships")
+    suspend fun getAllSavedScholarshipsList(): List<SavedScholarship>
 }
