@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         requestNotificationPermissionIfNeeded()
         scheduleDeadlineReminders()
     }
-
+     //new
     private fun requestNotificationPermissionIfNeeded() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             val granted = ContextCompat.checkSelfPermission(
