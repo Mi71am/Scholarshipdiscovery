@@ -60,7 +60,7 @@ class DeadlineReminderWorker(
             Result.retry()
         }
     }
-
+    // Check deadline formatting before scheduling reminder
     private fun parseDeadline(rawDeadline: String): LocalDate? {
         return try {
             LocalDate.parse(rawDeadline.trim())
