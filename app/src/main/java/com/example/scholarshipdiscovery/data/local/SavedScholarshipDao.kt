@@ -25,3 +25,4 @@ interface SavedScholarshipDao {
     @Query("SELECT * FROM saved_scholarships")
     suspend fun getAllSavedScholarshipsList(): List<SavedScholarship>
 }
+// Case-insensitive match helps users find scholarships with partial names

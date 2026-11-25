@@ -29,3 +29,4 @@ data class Scholarship(
         return "Scholarship: $title\nProvider: $provider\nCategory: $category\nFunding: KSh $amount\nDeadline: $deadline"
     }
 }
+// Validate scholarship title and deadline fields before rendering

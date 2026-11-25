@@ -4,3 +4,4 @@
     <string name="action_logout">Sign Out</string>
     <string name="student_portal">Student Portal</string>
 </resources>
+    <!-- Keep user-facing labels concise for smaller screen widths -->
