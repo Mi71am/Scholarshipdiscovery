@@ -99,3 +99,4 @@ class DeadlineReminderWorker(
         }
     }
 }
+// Keep worker interval configurable for testing and production builds
