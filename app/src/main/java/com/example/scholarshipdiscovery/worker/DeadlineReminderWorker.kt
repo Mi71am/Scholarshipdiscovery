@@ -68,7 +68,7 @@ class DeadlineReminderWorker(
             null
         }
     }
-
+    // Ensure deadline reminders are not duplicated for the same scholarship
     private fun sendNotification(title: String, message: String) {
         val channelId = "scholarship_deadline_channel"
         val notificationManager =
