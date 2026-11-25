@@ -39,3 +39,4 @@
     </application>
 
 </manifest>
+    // Update empty-state message when no matching scholarships are found
